@@ -9,7 +9,7 @@ on:
       style:
         description: 'Card style (default, dark, white, darkRed, hacker, oldDefault)'
         required: false
-        default: 'hacker'
+        default: 'default'
   schedule:
     - cron: '23 23 * * *'
 
