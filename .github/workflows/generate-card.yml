@@ -40,7 +40,7 @@ jobs:
         if [ "${{ github.event_name }}" == "workflow_dispatch" ] && [ "${{ github.event.inputs.style }}" != "" ]; then
           python gen.py ${{ github.event.inputs.style }}
         else
-          python gen.py hacker
+          python gen.py default
         fi
     
     - name: Upload SVG to GitHub Repo
